@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings version="2">
+
+    <section id="tmdb">
+        <setting id="tmdb_api_key">
+            <level>0</level>
+            <label>API Key TMDB</label>
+            <type>string</type>
+            <default>af3a53eb387d57fc935e9128468b1899</default>
+        </setting>
+        <setting id="tmdb_lang_details">
+            <level>0</level>
+            <label>Lingua dettagli</label>
+            <type>string</type>
+            <default>it-IT</default>
+        </setting>
+        <setting id="tmdb_cert_country">
+            <level>0</level>
+            <label>Paese certificazione</label>
+            <type>string</type>
+            <default>IT</default>
+        </setting>
+        <setting id="tmdb_enable_trailer">
+            <level>0</level>
+            <label>Abilita Trailer</label>
+            <type>bool</type>
+            <default>true</default>
+        </setting>
+        <setting id="tmdb_fanarttv_enable">
+            <level>0</level>
+            <label>Abilita Fanart.tv</label>
+            <type>bool</type>
+            <default>false</default>
+        </setting>
+        <setting id="tmdb_fanarttv_key">
+            <level>0</level>
+            <label>Fanart.tv Client Key</label>
+            <type>string</type>
+            <default></default>
+        </setting>
+    </section>
+
+    <section id="scraper">
+        <setting id="flaresolverr_url">
+            <level>0</level>
+            <label>FlareSolverr URL</label>
+            <type>string</type>
+            <default>http://localhost:8191</default>
+        </setting>
+        <setting id="flaresolverr_enabled">
+            <level>0</level>
+            <label>Abilita FlareSolverr</label>
+            <type>bool</type>
+            <default>false</default>
+        </setting>
+        <setting id="max_results">
+            <level>0</level>
+            <label>Risultati per sito</label>
+            <type>number</type>
+            <default>5</default>
+        </setting>
+    </section>
+
+    <section id="clipboard">
+        <setting id="clipboard_integration">
+            <level>0</level>
+            <label>Integrazione ClipboardText Plus</label>
+            <type>bool</type>
+            <default>true</default>
+        </setting>
+        <setting id="clearafterread">
+            <level>0</level>
+            <label>Svuota clipboard dopo lettura</label>
+            <type>bool</type>
+            <default>false</default>
+        </setting>
+    </section>
+
+</settings>
