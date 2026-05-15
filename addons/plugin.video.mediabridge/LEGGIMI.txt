@@ -1,0 +1,29 @@
+====================================================
+  MEDIABRIDGE - Plugin Kodi per Streaming
+====================================================
+
+INSTALLAZIONE:
+1. Comprimi la cartella plugin.video.mediabridge in .zip
+2. In Kodi: Impostazioni → Add-on → Installa da file zip
+
+AGGIUNGERE UN SITO SCRAPER:
+1. Copia resources/lib/scrapers/scraper_template.py
+2. Rinominalo (es: sito_mio.py)
+3. Modifica SITE_NAME, BASE_URL, search_url(), parse_results(), get_stream_links()
+4. Apri resources/lib/scrapers/manager.py
+5. Decommentare/aggiungere il tuo scraper in REGISTERED_SCRAPERS
+
+FLARESOLVERR (opzionale per siti con Cloudflare pesante):
+- Installa FlareSolverr su un PC/server della tua rete
+- In Kodi: Impostazioni addon → Inserisci URL FlareSolverr
+- Es: http://192.168.1.100:8191
+
+INTEGRAZIONE CLIPBOARDTEXT PLUS:
+- Funziona automaticamente se hai script.clipboard.text_plus installato
+- Il testo scritto in clipboard.txt viene letto automaticamente
+
+FILE IMPORTANTI:
+- resources/lib/scrapers/scraper_template.py  → Template base scraper
+- resources/lib/scrapers/manager.py           → Registro scraper
+- resources/lib/cloudflare/bypass.py          → Bypass Cloudflare
+- resources/lib/navigator.py                  → Logica navigazione
