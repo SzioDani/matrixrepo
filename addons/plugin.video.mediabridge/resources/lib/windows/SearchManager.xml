@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window type="dialog">
+    <defaultcontrol always="true">1000</defaultcontrol>
+    <controls>
+        
+        <control type="image">
+            <width>1280</width>
+            <height>720</height>
+            <texture colordiffuse="AA000000">colors/black.png</texture>
+        </control>
+
+        <control type="group">
+            <left>260</left>
+            <top>120</top>
+            <width>760</width>
+            <height>480</height>
+
+            <control type="image">
+                <width>760</width>
+                <height>480</height>
+                <texture border="5">colors/white.png</texture>
+                <colordiffuse>FF444444</colordiffuse> 
+            </control>
+
+            <control type="label">
+                <left>20</left>
+                <top>15</top>
+                <width>720</width>
+                <height>40</height>
+                <align>left</align>
+                <font>font13_title</font>
+                <label>[B]GESTIONE RICERCHE[/B]</label>
+                <textcolor>FFFF00FF</textcolor> 
+            </control>
+
+            <control type="image">
+                <left>0</left> 
+                <top>55</top>
+                <width>500</width>
+                <height>425</height> 
+                <texture border="5">colors/black.png</texture>
+                <colordiffuse>FF333333</colordiffuse>
+            </control>
+
+            <control type="list" id="1000">
+                <left>10</left>
+                <top>65</top>
+                <width>485</width>
+                <height>410</height>
+                <onright>2000</onright>
+                
+                <itemlayout height="50">
+                    <control type="image">
+                        <left>5</left>
+                        <top>10</top>
+                        <width>30</width>
+                        <height>30</height>
+                        <texture>$INFO[ListItem.Icon]</texture>
+                    </control>
+                    <control type="label">
+                        <left>45</left>
+                        <top>0</top>
+                        <width>430</width>
+                        <height>50</height>
+                        <font>font13</font>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                        <textcolor>FFCCCCCC</textcolor>
+                    </control>
+                </itemlayout>
+
+                <focusedlayout height="50">
+                    <control type="image">
+                        <width>495</width>
+                        <height>50</height>
+                        <texture border="5">lists/list-focus.png</texture>
+                        <colordiffuse>FF00FFFF</colordiffuse>
+                    </control>
+                    <control type="image">
+                        <left>5</left>
+                        <top>10</top>
+                        <width>30</width>
+                        <height>30</height>
+                        <texture>$INFO[ListItem.Icon]</texture>
+                    </control>
+                    <control type="label">
+                        <left>45</left>
+                        <top>0</top>
+                        <width>400</width>
+                        <height>50</height>
+                        <font>font13</font>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                        <textcolor>FFFFFFFF</textcolor>
+                    </control>
+                </focusedlayout>
+            </control>
+
+            <control type="grouplist" id="2000">
+                <left>532</left>
+                <top>70</top> 
+                <width>180</width>
+                <height>390</height> 
+                <itemgap>20</itemgap>
+                <onleft>1000</onleft>
+
+                <control type="button" id="2000">
+                    <width>180</width>
+                    <height>55</height>
+                    <label>[B]Apri[/B]</label>
+                    <align>center</align>
+                    <textcolor>FF00FF00</textcolor>
+                    <texturenofocus border="5">colors/black.png</texturenofocus>
+                    <texturefocus border="5">colors/black.png</texturefocus>
+                    <colordiffuse>FF000000</colordiffuse> 
+                </control>
+
+                <control type="button" id="2001">
+                    <width>180</width>
+                    <height>55</height>
+                    <label>[B]Preferiti[/B]</label>
+                    <align>center</align>
+                    <textcolor>FFFFD700</textcolor>
+                    <texturenofocus border="5">colors/black.png</texturenofocus>
+                    <texturefocus border="5">colors/black.png</texturefocus>
+                    <colordiffuse>FF000000</colordiffuse>
+                </control>
+
+                <control type="button" id="2002">
+                    <width>180</width>
+                    <height>55</height>
+                    <label>[B]Elimina[/B]</label>
+                    <align>center</align>
+                    <textcolor>FF00FFFF</textcolor>
+                    <texturenofocus border="5">colors/black.png</texturenofocus>
+                    <texturefocus border="5">colors/black.png</texturefocus>
+                    <colordiffuse>FF000000</colordiffuse>
+                </control>
+
+                <control type="button" id="2003">
+                    <width>180</width>
+                    <height>55</height>
+                    <label>[B]Svuota tutto[/B]</label>
+                    <align>center</align>
+                    <textcolor>FFFF0000</textcolor>
+                    <texturenofocus border="5">colors/black.png</texturenofocus>
+                    <texturefocus border="5">colors/black.png</texturefocus>
+                    <colordiffuse>FF000000</colordiffuse>
+                </control>
+
+                <control type="button" id="2004">
+                    <width>180</width>
+                    <height>55</height>
+                    <label>[B]Chiudi[/B]</label>
+                    <align>center</align>
+                    <textcolor>FFFF00FF</textcolor>
+                    <texturenofocus border="5">colors/black.png</texturenofocus>
+                    <texturefocus border="5">colors/black.png</texturefocus>
+                    <colordiffuse>FF000000</colordiffuse>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>
