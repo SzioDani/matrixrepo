@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <depth>0.52</depth>
+    <controls>
+        <control type="group">
+            <left>0</left>
+            <top>0</top>
+            
+            <control type="image">
+                <width>1280</width>
+                <height>720</height>
+                <texture colordiffuse="FF000000">colors/white.png</texture>
+                <aspectratio>stretch</aspectratio>
+            </control>
+
+            <control type="image">
+                <width>1280</width>
+                <height>720</height>
+                <texture fallback="$INFO[ListItem.Art(poster)]">$INFO[ListItem.Property(fanart)]</texture>
+                <colordiffuse>E6FFFFFF</colordiffuse>
+                <aspectratio align="center" aligny="center">scale</aspectratio>
+                <fadetime>600</fadetime>
+                <animation effect="fade" start="100" end="50" time="300" condition="String.IsEmpty(ListItem.Property(fanart))">Conditional</animation>
+            </control>
+
+            <control type="image">
+                <width>1280</width>
+                <height>720</height>
+                <texture colordiffuse="33000000">colors/white.png</texture>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            
+            <control type="button" id="999">
+                <description>Intercettatore di tocco per lo sfondo</description>
+                <left>0</left>
+                <top>0</top>
+                <width>1280</width>
+                <height>350</height>
+                <label></label>
+                <texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
+                <onclick>Control.SetFocus(1000)</onclick>
+                <onfocus>Control.SetFocus(1000)</onfocus>
+            </control>
+
+            <control type="fixedlist" id="1000">
+                <top>40</top>
+                <width>1280</width>
+                <height>640</height>
+                <viewtype>wrap</viewtype>
+                <orientation>horizontal</orientation>
+                <focusposition>0</focusposition>
+                <scrolltime tween="cubic" easing="out">300</scrolltime>
+
+                <itemlayout width="190" height="640">
+                    <control type="image">
+                        <top>380</top>
+                        <width>180</width>
+                        <height>260</height>
+                        <texture>$INFO[ListItem.Art(poster)]</texture>
+                        <aspectratio>scale</aspectratio>
+                        <bordersize>3</bordersize>
+                        <bordertexture colordiffuse="FFFF00FF">colors/white.png</bordertexture>
+                    </control>
+                </itemlayout>
+
+                <focusedlayout width="427" height="640">
+                    <control type="textbox">
+                        <left>432</left>
+                        <top>10</top>
+                        <width>825</width>
+                        <height>40</height>
+                        <font>font15_title</font>
+                        <label>[B]$INFO[ListItem.Label][/B] [COLOR FFFFFFFF]($INFO[ListItem.Property(year)])[/COLOR]</label>
+                    </control>
+
+                    <control type="label">
+                        <left>432</left>
+                        <top>55</top>
+                        <width>783</width>
+                        <font>font13</font>
+                        <label>[B][COLOR FFFF0099]$INFO[ListItem.Property(genre)][/COLOR][/B][B][COLOR FFFF00FF] | [/COLOR][/B][COLOR FFFFFF00]$INFO[ListItem.Property(rating)][/COLOR]$INFO[ListItem.Property(seasons),[COLOR FFFF00FF] | [/COLOR][COLOR FF00FFFF][B]Stagioni:[/B]]$INFO[ListItem.Property(episodes),[COLOR FFFF00FF] | [/COLOR][B]Episodi:[/B]]</label>        
+                    </control>
+
+                    <control type="textbox">
+                        <left>432</left>
+                        <top>95</top>
+                        <width>825</width>
+                        <height>200</height>
+                        <font>font13</font>
+                        <align>justify</align>
+                        <label>$INFO[ListItem.Property(plot)]</label>
+                        <autoscroll time="3000" delay="4000" repeat="5000">True</autoscroll>
+                    </control>
+
+                    <control type="textbox">
+                        <left>432</left>
+                        <top>330</top>
+                        <width>825</width>
+                        <height>65</height>
+                        <font>font12</font>
+                        <textcolor>FFAAAAAA</textcolor>
+                        <align>justify</align>
+                        <label>[B][COLOR FF00FFFF]$INFO[Window.Property(TitoloDinamico)][/COLOR][/B] [COLOR FFFFFFFF]$INFO[ListItem.Property(cast)][/COLOR]</label>
+                        <autoscroll time="5000" delay="4000" repeat="5000">True</autoscroll>
+                    </control>
+
+                    <control type="image">
+                        <bottom>0</bottom>
+                        <left>32</left>
+                        <width>384</width>
+                        <height>576</height>
+                        <texture>$INFO[ListItem.Art(poster)]</texture>
+                        <aspectratio>scale</aspectratio>
+                        <bordersize>6</bordersize>
+                        <bordertexture colordiffuse="FFFFD700">colors/white.png</bordertexture>
+                        <animation effect="fade" start="103" end="90" time="850" pulse="true" condition="true">Conditional</animation>
+                        <animation effect="zoom" start="100" end="97.5" time="850" condition="Control.HasFocus(1000)" pulse="true">Conditional</animation>
+                    </control>
+                </focusedlayout>
+            </control>
+        </control>
+    </controls>
+</window>
