@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>MatrixRepo Explorer</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 30px; background: #1a1a1a; color: #eee; }
+        .container { max-width: 800px; margin: auto; background: #2d2d2d; padding: 20px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
+        h1 { color: #00ff99; border-bottom: 2px solid #00ff99; padding-bottom: 10px; }
+        .section { margin-top: 20px; padding: 10px; background: #3d3d3d; border-radius: 5px; }
+        h3 { margin-top: 0; color: #ffcc00; }
+        ul { list-style: none; padding: 0; }
+        li { padding: 8px; border-bottom: 1px solid #444; display: flex; align-items: center; }
+        li:hover { background: #444; }
+        a { text-decoration: none; color: #57c7ff; font-weight: bold; flex-grow: 1; }
+        .type { font-size: 0.8em; color: #aaa; margin-right: 10px; width: 30px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MatrixRepo - Full Explorer</h1>
+        
+        <div class="section">
+            <h3>📦 Repository & Installazione</h3>
+            <ul>
+                <li><span class="type">ZIP</span><a href="repository.matrixrepo-1.0.0.zip">repository.matrixrepo-1.0.0.zip</a></li>
+                <li><span class="type">XML</span><a href="addons.xml">addons.xml</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>🛠️ Addon: MediaBridge (Sorgenti Completi)</h3>
+            <ul>
+                <li><span class="type">PY</span><a href="addons/plugin.video.mediabridge/service.py">service.py (Background Service)</a></li>
+                <li><span class="type">PY</span><a href="addons/plugin.video.mediabridge/main.py">main.py (Logic)</a></li>
+                <li><span class="type">XML</span><a href="addons/plugin.video.mediabridge/addon.xml">addon.xml (Manifest)</a></li>
+                <li><span class="type">DIR</span><a href="https://github.com/SzioDani/matrixrepo/tree/main/addons/plugin.video.mediabridge/resources">Sfoglia Cartella Resources (su GitHub)</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>🖼️ Asset Grafici</h3>
+            <ul>
+                <li><span class="type">IMG</span><a href="icon.png">Icona Repository</a></li>
+                <li><span class="type">IMG</span><a href="fanart.jpg">Fanart Repository</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
