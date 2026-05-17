@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.matrixrepo"
+       name="MatrixRepo"
+       version="1.0.0"
+       provider-name="Negan">
+
+    <extension point="xbmc.addon.repository"
+               name="MatrixRepo">
+
+        <info compressed="false">
+            https://sziodani.github.io/matrixrepo/addons.xml
+        </info>
+
+        <checksum>
+            https://sziodani.github.io/matrixrepo/addons.xml.md5
+        </checksum>
+
+        <datadir zip="true">
+            https://sziodani.github.io/matrixrepo/addons/
+        </datadir>
+
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="it">Repository ufficiale di Negan</summary>
+        <description lang="it">Contiene 5 addon: MediaBridge, ClipboardText, ClipboardText Plus, YouTube Random Player e UniversalPlayer.</description>
+        <platform>all</platform>
+        <license>MIT</license>
+    </extension>
+
+</addon>
